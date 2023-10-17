@@ -1,0 +1,119 @@
+.burger-btn {
+    display: none;
+}
+
+.burger {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    background-color: #000000d2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+.burger_open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.burger__contetn {
+    width: 296px;
+    height: 100%;
+    background-color: #fff;
+    padding: 80px 10px 50px 30px;
+    overflow: auto;
+    transition: transform 0.5s linear;
+    transform: translateX(100%)
+}
+
+.burger_open .burger__contetn {
+    transform: translateX(0);
+}
+
+.burger__nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.burger__link {
+    display: block;
+    font-size: 28px;
+    line-height: 28px;
+    text-decoration: none;
+    color: black;
+}
+
+.burger__link:hover{
+    color: #3db0f2;
+}
+
+.burger__content__title {
+    margin-top: 90px;
+    font-size: 16px;
+    line-height: 21.86px;
+    opacity: 0.7;
+}
+
+.burger__contact__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    text-decoration: none;
+}
+
+.burger__telegram,
+.burger__phone {
+    font-size: 20px;
+    line-height: 45.62px;
+    text-decoration: none;
+    color: #3db0f2;
+}
+
+@media (max-width: 1199px) {
+    .burger-btn {
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 12px;
+        background-image:url('../recoures/burgerbtn.png');
+        border: unset;
+        background-color: unset;
+        background-size: cover;
+        top: 53px;
+        right: 50px;
+        z-index: 100;
+        color: #fff;
+    }
+
+    .burger-btn_open {
+        width: 40px;
+        height: 40px;
+        top: 43px;
+        right: 40px;
+        background-image: url('../recoures/closesburger.png');
+    }
+}
+
+@media (max-width: 767px) {
+    .burger-btn {
+        position: absolute;
+        right: 45px;
+        z-index: 100;
+        display: block;
+        width: 42px;
+        height: 9px;
+    }
+
+    .burger-btn_open{
+        width: 34px;
+        height: 34px;
+    }
+}

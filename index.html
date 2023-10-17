@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+    <link type="image/x-icon" sizes="16x16" rel="icon" href="./fovicon/iconport.png">
+
+</head>
+<body>
+ 
+    <header class="header">
+            <div class="container">
+                    <div class="head__wrapper">
+                        <a class="mylogo" href="">SHIGAPOV</a>
+                        <nav class="head__nav">
+                            <a class="head__link" href="#project">портфолио</a>
+                            <a class="head__link" href="#competencie">компетенции</a>
+                            <a class="head__link" href="#service">услуги</a>
+                            <a class="head__link" href="#footer">контакты</a>
+                        </nav>
+
+                        <div class="js-burger burger">
+                            <div class="js-burger__contetn burger__contetn">
+                                <a href="">
+                                    <img class="inburgerlogo" src="resources/met-logo.jpg" alt="">
+                                </a>
+                                <nav class="burger__nav">
+                                    <a class="burger__link" href="#project">портфолио</a>
+                                    <a class="burger__link" href="#competencie">компетенции</a>
+                                    <a class="burger__link" href="#service">услуги</a>
+                                    <a class="burger__link" href="#footer">контакты</a>
+                                </nav>
+                                <h3 class="burger__content__title">ДЛЯ СВЗЯИ:</h3>
+                                <div class="burger__contact__list">
+                                    <a class="burger__phone" href="tel:+7 935  895-45-35">+7 935  895-45-35</a>
+                                    <a class="burger__telegram" href="https://t.me/bybashqort" target="_blank">Fara@mail.ru</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <p class="head__text">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
+                <h1 class="head__title">Привет, я Фарваз — фронтенд разработчик</h1> 
+                <button class="js-burger-btn burger-btn"></button>      
+            </div>
+    </header>
+    
+    
+<!--
+    <main>
+        <!--Секция ПРОЕКТЫ
+        <section class="projects">
+            <div class="container" id="project">
+                <h2 class="title">Самые свежие проекты</h2>
+                <ul class="projects__list">
+                    <li class="project">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="recoures/projectimage/metrikamob.png">
+                            <source media="(max-width: 1199px)" srcset="recoures/projectimage/metrikatable.png">
+                            <img class="project__image" src="recoures/projectimage/metrika.png" alt="большой дом">
+                        </picture>
+                        <a href="#" target="_blank" >
+                            <div class="project__wrapper">
+                                <p class="project__text">дизайн интерьера</p>
+                                <h3 class="project__title">Realhome</h3>
+                                <p class="project__description">верстка, настройка</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="recoures/projectimage/nothingmob.png">
+                            <source media="(max-width: 1199px)" srcset="recoures/projectimage/nothingtable.png">
+                            <img class="project__image" src="recoures/projectimage/mothing.png" alt="интерфейс">
+                        </picture>
+                        <a href="#" target="_blank" >
+                            <div class="project__wrapper">
+                                <p class="project__text">презентация продукта</p>
+                                <h3 class="project__title">Nothing</h3>
+                                <p class="project__description">рверстка, настройка</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="recoures/projectimage/toptmob.png">
+                            <source media="(max-width: 1199px)" srcset="recoures/projectimage/topttable.png">
+                            <img class="project__image" src="recoures/projectimage/topt.png" alt="оранжевый интерфейс">
+                        </picture>
+                        <a href="#" target="_blank" >
+                            <div class="project__wrapper">
+                                <p class="project__text">заказ путешествий</p>
+                                <h3 class="project__title">TOPTRIP</h3>
+                                <p class="project__description">верстка</p>
+                            </div>
+                        </a>
+                    </li>
+                    <a class="project__btn" href="/" target="_blank" >Смотреть все проекты</a>
+                </ul>
+            </div>
+        </section>
+        <!--Секция КОМПЕТЕНЦИИ
+        <section class="competencies">
+            <div class="container" id="competencie">
+                <h2 class="title"> Мои компетенции</h2>
+                <ul class="competencies-wrapper">
+                    <li class="competence">
+                        <img class="competence__badge" src="recoures/competence/html.png" alt="значок html">
+                        <h3 class="competencies__title">HTML и CSS</h3>
+                        <p class="competencies__description">это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
+                    </li>
+                    <li class="competence">
+                        <img class="competence__badge" src="recoures/competence/js.png" alt="значок JS">
+                        <h3 class="competencies__title">JavaScript</h3>
+                        <p class="competencies__description">это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
+                    </li>
+                    <li class="competence">
+                        <img class="competence__badge" src="recoures/competence/phone.png" alt="значок телефона">
+                        <h3 class="competencies__title">Работа с библиотеками и фреймворками</h3>
+                        <p class="competencies__description">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+                    </li>
+                    <li class="competence">
+                        <img class="competence__badge" src="recoures/competence/neutron.png" alt="значок нейтрона">
+                        <h3 class="competencies__title">Разработка для мобильных устройств и адаптивная верстка</h3>
+                        <p class="competencies__description">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Секция УСЛУГИ
+        <section class="services">
+            <div class="container" id="service">
+                <h2 class="title">Помогаю реализовать широкий спектр задач</h2>
+                <ul class="services__list">
+                    <li class="service">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="recoures/services/yourbusinessmob.png">
+                            <source media="(max-width: 1199px)" srcset="recoures/services/yourbusinesstable.png">
+                            <img class="service__image" src="recoures/services/yourbusiness.png" alt="разработка сайта">
+                        </picture>
+                        <div class="service__wrapper">
+                            <h3 class="services__title">Разработка сайта под ключ</h3>
+                            <p class="services__description">Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач
+                            Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="recoures/services/momentsmovemob.png">
+                            <source media="(max-width: 1199px)" srcset="recoures/services/momentsmovetable.png">
+                            <img class="service__image" src="recoures/services/momentsmove.png" alt="верстка сайта">
+                        </picture>
+                        <div class="service__wrapper">
+                            <h3 class="services__title">Верстка сайтов</h3>
+                            <p class="services__description">Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта
+                            </p>
+                        </div>
+                    </li>
+                    <li class="service">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="recoures/services/mobainterfacemob.png">
+                            <source media="(max-width: 1199px)" srcset="recoures/services/mobainterfacetable.png">
+                            <img class="service__image" src="recoures/services/mobainterface.png" alt="мобильный интерфейс">
+                        </picture>
+                        <div class="service__wrapper">
+                            <h3 class="services__title">Разработка мобильного интерфейса</h3>
+                            <p class="services__description">Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Секция КОНТАКТЫ
+        <section class="contacts">
+            <div class="container" id="contact">
+                <div class="contact__wrapper">
+                    <p class="contact__title">Для связи со мной заполните простую форму</p>                  
+                    <div class="input__content">
+                            <input
+                            class="input"
+                            type="text"
+                            name="name"
+                            placeholder="Имя Фамилия"
+                            />
+                        <input
+                            class="input"
+                            type="email"
+                            name="email"
+                            placeholder="Электроннная почта"
+                            />
+                    </div> 
+                    <button class="contacts__btn">Отправить</button>                 
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container" id="footer">
+            <div class="footer__inner">
+                <p class="footer__description">Портфолио фронтенд-разработчика Фарваза Шигапова</p>
+                <nav class="nav">
+                    <a class="contacts__link" href="#">mail</a>
+                    <a class="contacts__link" href="#">telegram</a>
+                    <a class="contacts__link" href="#">instagram</a>
+                </nav>
+            </div>
+            <div class="footer__wrapper">
+                <p class="footer__text">Все права защищены. 2023</p>
+                <P class="footer__text">политика обработки данных</P>
+            </div>
+        </div>
+    </footer>
+-->
+    <script src="burger.js"></script> 
+</body>
+</html>

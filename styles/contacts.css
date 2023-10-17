@@ -1,0 +1,77 @@
+.contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-radius: 30px;
+    background-image: url('../recoures/cuate.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color:  #191C19;
+}
+
+.contact__title {
+    width: 553px;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.contacts__btn {
+    width: 450px;
+    height: 70px;
+    font-size: 22px;
+    margin-top: 79px;
+    border-radius: 10px;
+    border: 1px solid #3db0f2;
+    background-color: #3db0f2;
+    cursor: pointer;
+}
+
+.contacts__btn:hover {
+    border: 1px solid #3db0f2;
+    background-color: #191C19;
+    color: #3db0f2;
+}
+
+@media (max-width: 1199px) {
+    .contacts {
+        border-radius: 20px;
+        background-image: url('../recoures/cuatetable.png');
+      
+    }
+
+    .contact__wrapper {
+        padding-top: 50px;
+    }
+
+    .contact__title {
+        width: 373px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .contacts__btn {
+        width: 304px;
+        height: 47px;
+        font-size: 16px;
+        margin-top: 40px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contacts {
+        background-image: none;
+    }
+
+    .contact__title {
+        width: 310px;
+        font-size: 35px;
+        line-height: 37px;
+    }
+
+    .contacts__btn {
+        width: 95%;
+        height: 43px;
+        font-size: 15px;
+        border-radius: 6px;
+    }
+}

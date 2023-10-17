@@ -1,0 +1,75 @@
+.competencies .title {
+    color: #3db0f2;
+}
+
+.competence__badge {
+    width: 45px;
+    height: 44px; 
+    padding: 10px;
+    border-radius: 19px;
+    background-color: #3db0f2;
+}
+
+.competencies-wrapper {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+
+.competence {
+    width: calc(50% - 47px);
+}
+
+.competencies__title {
+    width: 575px;
+    margin-top: 15px;
+    font-size: 35px;
+    line-height: 45px;
+    color: #3db0f2;
+}
+  
+.competencies__description {
+    width: 515px;
+    margin-top: 15px;
+    font-size: 22px;
+    line-height: 28px;  
+}
+
+@media (max-width: 1199px) {
+    .competencies-wrapper {
+        margin-top: 60px;
+        row-gap: 36px;
+    }
+
+    .competence__badge {
+        width: 36px;
+        height: 36px; 
+        padding: 10px;
+        border-radius: 9px;
+    }
+
+    .competencies__title {
+        width: 459px;
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .competencies__description {
+        width: 410px;
+        font-size: 18px;
+        line-height: 23px;  
+    }
+    
+    .competence {
+        width: calc(50% - 0px);
+    }
+}
+
+@media (max-width: 767px) {
+    .competencies-wrapper {
+        flex-direction: column;
+        row-gap: 60px;
+    }
+}
